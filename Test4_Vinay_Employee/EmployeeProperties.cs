@@ -9,6 +9,8 @@ namespace Test4_Vinay_Employee
 {
     internal class EmployeeProperties
     {        
+
+
         public int EmpID { get; set; }
         public string? EmpName { get; set; }
         public int EmpAge { get; set; }

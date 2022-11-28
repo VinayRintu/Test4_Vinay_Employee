@@ -14,13 +14,14 @@ namespace Test4_Vinay_Employee
         string? query;
         public void AddEmployee()
         {
+
             Console.WriteLine("Enter Employee Name ");
             string EmpName = Console.ReadLine();
             Console.WriteLine("Enter Employee Age");
             int EmpAge =int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Employee Gender");
             string EmpGender=Console.ReadLine();
-            Console.WriteLine("Enter Department ID Based on Employee");
+            Console.WriteLine("Enter Employee ID Based on Employee");
             int EmpDeptID = int.Parse(Console.ReadLine());
 
             connection = "Server=VINDUJA\\MSSQLSERVER01;Database=Test;Trusted_Connection = true;TrustServerCertificate=True";
@@ -33,7 +34,7 @@ namespace Test4_Vinay_Employee
             con.Close();
             if (isDone == 1)
             {
-                Console.WriteLine("Department Record inserted Successfully");
+                Console.WriteLine("Employee Record inserted Successfully");
             }
         }
     }
